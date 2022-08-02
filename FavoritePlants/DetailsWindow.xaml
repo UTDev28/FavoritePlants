@@ -1,0 +1,113 @@
+﻿<Window x:Class="FavoritePlants.DetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FavoritePlants"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="DetailsWindow" Height="450" Width="800">
+    
+    <Grid Background="DarkGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Plant Details"
+               Grid.ColumnSpan="2"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="25"
+               FontWeight="Bold"/>
+
+        <Label Content="Name:"
+               Grid.Row="1"
+               Grid.Column="0"
+               FontSize="25"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Center"/>
+
+        <Label Content="Enviroment:"
+               Grid.Row="2"
+               Grid.Column="0"
+               FontSize="25"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Center"/>
+
+        <Label Content="Type:"
+               Grid.Row="3"
+               Grid.Column="0"
+               FontSize="25"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Center"/>
+
+        <Label Content="Pick:"
+               Grid.Row="4"
+               Grid.Column="0"
+               FontSize="25"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Center"/>
+
+        <Label x:Name="LblName"
+               Content="Name results..."
+               Grid.Row="1"
+               Grid.Column="1"
+               FontSize="25"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"/>
+
+        <Label x:Name="LblEnviroment"
+               Content="Enviroment results..."
+               Grid.Row="2"
+               Grid.Column="1"
+               FontSize="25"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"/>
+
+        <Label x:Name="LblType"
+               Content="Type results..."
+               Grid.Row="3"
+               Grid.Column="1"
+               FontSize="25"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"/>
+
+        <Label x:Name="LblPick"
+               Content="Pick results..."
+               Grid.Row="4"
+               Grid.Column="1"
+               FontSize="25"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"/>
+
+        <Button x:Name="BtnSniff"
+                Content="Sniff"
+                FontSize="30"
+                Grid.Row="5"
+                Margin="10"
+                Click="BtnSniff_Click"/>
+
+        <Button x:Name="BtnClose"
+                Content="Close"
+                FontSize="30"
+                Grid.Row="5"
+                Grid.Column="5"
+                Margin="10"
+                Click="BtnClose_Click"/>
+
+
+
+
+    </Grid>
+    
+    
+</Window>

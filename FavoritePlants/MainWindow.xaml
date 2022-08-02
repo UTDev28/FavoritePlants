@@ -1,0 +1,128 @@
+﻿<Window x:Class="FavoritePlants.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FavoritePlants"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450" 
+        Width="1000" 
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="DarkGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox x:Name="TxtBoxPlantName"
+                 Grid.Row="1"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="2"
+                 Margin="15"
+                 FontSize="20"
+                 HorizontalContentAlignment="Left"
+                 VerticalContentAlignment="Center"/>
+
+        <ComboBox x:Name="CmbBoxEnviroment"
+                  Grid.Row="2"
+                  Grid.Column="1"
+                  Grid.ColumnSpan="2"
+                  FontSize="20"
+                  HorizontalContentAlignment="Left"
+                  VerticalContentAlignment="Center"
+                  Margin="15"/>
+
+
+        <Label Grid.ColumnSpan="4"
+               Content="Build a Plant"
+               FontSize="40"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center"/>
+
+        <Label Content="Name"
+               Grid.Row="1"
+               Grid.Column="0"
+               FontSize="30"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center"/>
+
+        <Label Content="Enviroment"
+               Grid.Row="2"
+               Grid.Column="0"
+               FontSize="30"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center"/>
+
+        <Label Content="Type"
+               Grid.Row="3"
+               Grid.Column="0"
+               FontSize="30"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center"/>
+
+        <RadioButton x:Name="RdBtnFlower"
+                 Grid.Row="3"
+                 Grid.Column="1"
+                 Content="Flower"
+                 FontSize="20"
+                 VerticalAlignment="Top"
+                 Checked="RdBtnFlower_Checked"/>
+
+        <RadioButton x:Name="RdBtnTree"
+                 Grid.Row="3"
+                 Grid.Column="1"
+                 Content="Tree"
+                 FontSize="20"
+                 VerticalAlignment="Center"
+                 Checked="RdBtnTree_Checked"/>
+
+        <RadioButton x:Name="RdBtnShrub"
+                 Grid.Row="3"
+                 Grid.Column="1"
+                 VerticalAlignment="Bottom"
+                 Content="Shrub"
+                 FontSize="20"
+                 Checked="RdBtnShrub_Checked"/>
+
+        <GroupBox Grid.RowSpan="3"
+                  Grid.Row="1"
+                  Grid.Column="3"
+                  Header="Plant List"
+                  FontSize="20">
+            <ListBox x:Name="LstBoxPlants"/>
+        </GroupBox>
+
+        <Button x:Name="BtnAddPlant"
+                Grid.Row="4"
+                Background="LightGray"
+                Margin="10"
+                Content="Add Plant"
+                FontSize="30"
+                Click="BtnAddPlant_Click"/>
+
+        <Button x:Name="BtnShowDetails"
+                Grid.Row="4"
+                Grid.Column="3"
+                Background="LightGray"
+                Margin="10"
+                Content="Show Details"
+                FontSize="30"
+                Click="BtnShowDetails_Click"/>
+
+        <Image x:Name="ImgPlant"
+               Grid.Row="3"
+               Grid.Column="2"
+               Source="tree.png"/>
+
+    </Grid>
+</Window>

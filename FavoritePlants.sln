@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FavoritePlants", "FavoritePlants\FavoritePlants.csproj", "{E886EE3D-F857-4AF3-B930-D7BFE21E21F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E886EE3D-F857-4AF3-B930-D7BFE21E21F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E886EE3D-F857-4AF3-B930-D7BFE21E21F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E886EE3D-F857-4AF3-B930-D7BFE21E21F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E886EE3D-F857-4AF3-B930-D7BFE21E21F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7732EEF4-26D0-44CE-8850-3A5A3CE3D3CB}
+	EndGlobalSection
+EndGlobal
